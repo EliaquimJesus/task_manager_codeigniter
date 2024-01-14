@@ -70,3 +70,5 @@ Config\App::$baseURL "/" is not a valid URL.
 #21 {main}
 in SYSTEMPATH\HTTP\SiteURI.php on line 199.
  1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2024-01-14 19:10:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-14 19:10:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

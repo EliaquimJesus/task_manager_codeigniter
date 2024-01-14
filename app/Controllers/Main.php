@@ -11,20 +11,25 @@ class Main extends BaseController
 {
     public function index()
     {
-        // Utilizadores Model
-        $userModel = new UtilizadoresModel();
-        $users = $userModel->findAll();
-        
-        //dd($users);
-        echo '<pre>';
-        print_r($users);
+        // index
+    }
 
-        // Tasks Model
-        $taskModel = new TasksModel();
-        $tasks = $taskModel->findAll();
+    public function login()
+    {
+        return view('login_frm');
+    }
 
-        //dd($tasks);
-        echo '<pre>';
-        print_r($tasks);
+    public function login_submit()
+    {   
+        // get form data
+        $user = $this->request->getPost('text_utilizador');
+        $passwrd = $this->request->getPost('text_password');
+
+        if(empty($user) || empty($passwrd))
+        {
+            return redirect()->to('login')->withInput()->with('error', 'Usuário e senha obrigatórios.');
+        }
+
+        echo "Utilizador: $user " . "<br>" . "Password: $passwrd";
     }
 }
