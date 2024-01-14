@@ -20,6 +20,15 @@
                             <button class="btn btn-primary w-100">Entrar</button>
                         </div>
                     <?= form_close() ?>
+                    <?php if(!empty($validation_errors)): ?>
+                        <div class="alert alert-danger">
+                            <ul>
+                                <?php foreach($validation_errors as $error): ?>
+                                    <li><?= $error ?></li>
+                                <?php endforeach; ?>
+                            </ul>
+                        </div>
+                    <?php endif; ?>
                 </div>
             </div>
         </div>

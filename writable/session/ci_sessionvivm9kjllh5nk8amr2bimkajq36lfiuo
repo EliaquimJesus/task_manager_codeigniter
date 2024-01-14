@@ -1,1 +1,1 @@
-__ci_last_regenerate|i:1705259442;_ci_old_input|a:2:{s:3:"get";a:0:{}s:4:"post";a:2:{s:15:"text_utilizador";s:3:"ddd";s:13:"text_password";s:0:"";}}__ci_vars|a:2:{s:13:"_ci_old_input";s:3:"new";s:5:"error";s:3:"new";}error|s:31:"Usuário e senha obrigatórios.";
+__ci_last_regenerate|i:1705261847;_ci_old_input|a:2:{s:3:"get";a:0:{}s:4:"post";a:2:{s:15:"text_utilizador";s:3:"ddd";s:13:"text_password";s:0:"";}}__ci_vars|a:2:{s:13:"_ci_old_input";s:3:"new";s:5:"error";s:3:"new";}error|s:31:"Usuário e senha obrigatórios.";
