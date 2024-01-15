@@ -97,4 +97,3 @@ define('EVENT_PRIORITY_HIGH', 10);
  * my custom constants.
  */
 define('APP_NAME', 'Gestor de Tarefas');
-
