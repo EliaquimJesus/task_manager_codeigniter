@@ -11,7 +11,11 @@ class Main extends BaseController
 {
     public function index()
     {
-        // index
+        if (session()->has('id')) {
+            echo 'Logado';
+        } else {
+            echo 'Não logado';
+        }
     }
 
     public function login()
@@ -55,6 +59,28 @@ class Main extends BaseController
         $user = $this->request->getPost('text_utilizador');
         $passwrd = $this->request->getPost('text_password');
 
-        dd([$user, $passwrd]);
+        // Check if login is valid
+        $utilizadores_model = new UtilizadoresModel();
+        $user_data = $utilizadores_model->where('usuario', $user)->first();
+
+        // If usuario is not found
+        if (!$user_data) {
+            return redirect()->to('/login')->withInput()->with('login_errors', 'Utilizador ou password inválidos.');
+        }
+
+        // If password is not valid
+        if (password_verify($passwrd, $user_data->password)) {
+            return redirect()->to('/login')->withInput()->with('login_errors', 'Utilizador ou password inválidos.');
+        }
+
+        // login is valid
+        $session_data = [
+            'id' => $user_data->id,
+            'utilizador' => $user_data->usuario
+        ];
+        session()->set($session_data);
+
+        // redirect to home page
+        return redirect()->to('/');
     }
 }
