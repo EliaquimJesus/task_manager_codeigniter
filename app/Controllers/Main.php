@@ -28,6 +28,12 @@ class Main extends BaseController
             $data['validation_errors'] = $validation_errors;
         }
 
+        // check for login error
+        $login_error = session()->getFlashdata('login_error');
+        if($login_error){
+            $data['login_error'] = $login_error;
+        }
+
         return view('login_frm', $data);
     }
 
@@ -65,12 +71,12 @@ class Main extends BaseController
 
         // If usuario is not found
         if (!$user_data) {
-            return redirect()->to('/login')->withInput()->with('login_errors', 'Utilizador ou password inválidos.');
+            return redirect()->to('/login')->withInput()->with('login_error', 'Utilizador ou password inválidos.');
         }
 
         // If password is not valid
         if (!password_verify($passwrd, $user_data->passwrd)) {
-            return redirect()->to('/login')->withInput()->with('login_errors', 'Utilizador ou password inválidos.');
+            return redirect()->to('/login')->withInput()->with('login_error', 'Utilizador ou password inválidos.');
         }
 
         // login is valid

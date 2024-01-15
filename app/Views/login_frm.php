@@ -5,7 +5,7 @@
 <div class="d-flex align-items-center" style="height: 100vh;">
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-md-4 col-sm-6 col-10">
+            <div class="col-md-6 col-sm-6 col-10">
                 <div class="card bg-light text-dark rounded-3 p-5">
                     <?= form_open('login_submit', ['novalidate' => true]) ?>
                     <h3 class="text-center">Login</h3>
@@ -24,15 +24,11 @@
                         <button class="btn btn-primary w-100">Entrar</button>
                     </div>
                     <?= form_close() ?>
-                    <!-- <?php if (!empty($validation_errors)) : ?>
+                    <?php if (!empty($login_error)) : ?>
                     <div class="alert alert-danger">
-                        <ul>
-                            <?php foreach ($validation_errors as $error) : ?>
-                            <li><?= $error ?></li>
-                            <?php endforeach; ?>
-                        </ul>
+                        <?= $login_error ?>
                     </div>
-                    <?php endif; ?> -->
+                    <?php endif; ?>
                 </div>
             </div>
         </div>
