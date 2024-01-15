@@ -61,7 +61,7 @@ class Main extends BaseController
 
         // Check if login is valid
         $utilizadores_model = new UtilizadoresModel();
-        $user_data = $utilizadores_model->where('usuario', $user)->first();
+        $user_data = $utilizadores_model->where('utilizador', $user)->first();
 
         // If usuario is not found
         if (!$user_data) {
@@ -69,14 +69,14 @@ class Main extends BaseController
         }
 
         // If password is not valid
-        if (password_verify($passwrd, $user_data->password)) {
+        if (!password_verify($passwrd, $user_data->passwrd)) {
             return redirect()->to('/login')->withInput()->with('login_errors', 'Utilizador ou password inválidos.');
         }
 
         // login is valid
         $session_data = [
             'id' => $user_data->id,
-            'utilizador' => $user_data->usuario
+            'utilizador' => $user_data->utilizador
         ];
         session()->set($session_data);
 
