@@ -11,11 +11,9 @@ class Main extends BaseController
 {
     public function index()
     {
-        if (session()->has('id')) {
-            echo 'Logado';
-        } else {
-            echo 'Não logado';
-        }
+        // Crate main page
+        $data = [];
+        return view('main', $data);
     }
 
     public function login()
@@ -30,7 +28,7 @@ class Main extends BaseController
 
         // check for login error
         $login_error = session()->getFlashdata('login_error');
-        if($login_error){
+        if ($login_error) {
             $data['login_error'] = $login_error;
         }
 
