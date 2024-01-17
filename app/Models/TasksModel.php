@@ -12,7 +12,7 @@ class TasksModel extends Model
     protected $returnType       = 'object';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = [];
+    protected $allowedFields    = ['id_user', 'task_name', 'task_description', 'task_status'];
 
     // Dates
     protected $useTimestamps = true;
