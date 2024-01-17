@@ -87,4 +87,42 @@ class Main extends BaseController
         // redirect to home page
         return redirect()->to('/');
     }
+
+    /**
+     *  Function New task
+     */
+    public function new_task()
+    {
+        return view('new_task_frm');
+    }
+
+    /**
+     *  Function New task submit
+     */
+    public function new_task_submit()
+    {
+        echo 'new_task_submit';
+    }
+
+    /**
+     * Function session
+     */
+    public function session()
+    {
+        echo '<pre>';
+        print_r(session()->get());
+        echo '</pre>';
+    }
+
+    /**
+     * Function Logout
+     */
+    public function logout()
+    {
+        // Destroy the session
+        session()->destroy();
+
+        //redirect to login
+        return redirect()->to('/');
+    }
 }

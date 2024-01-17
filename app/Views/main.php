@@ -24,7 +24,7 @@
                 <label class="me-3">Status:</label>
                 <select name="select_status" class="form-select">
                     <?php foreach (STATUS_LIST as $key => $value) : ?>
-                    <option value="<?= $key ?>"><?= $value ?></option>
+                        <option value="<?= $key ?>"><?= $value ?></option>
                     <?php endforeach; ?>
                 </select>
             </div>
@@ -33,14 +33,15 @@
 
         <div class="col text-end">
             <!-- New task button -->
-            <a href="<?= site_url('new') ?>" class="btn btn-primary"><i class="fa-solid fa-plus me-2"></i>Nova
+            <a href="<?= site_url('new_task') ?>" class="btn btn-primary"><i class="fa-solid fa-plus me-2"></i>Nova
                 Tarefa</a>
         </div>
     </di>
+    <hr>
 </section>
 
 <!-- -->
-<section class="container mt-3">
+<section class="container mt-5">
     <div class="row">
         <div class="col">
             <h3>Tarefas</h3>
