@@ -41,45 +41,45 @@
 </section>
 
 <!-- -->
-<section class="container mt-5">
-    <div class="row">
-        <div class="col">
-            <h3>Tarefas</h3>
+<?php if (count($tasks) > 0) : ?>
+    <section class="container mt-3">
+        <div class="row">
+            <div class="col">
+                <h3 class="mb-5">Tarefas</h3>
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th width="50%">Tarefas</th>
+                            <th width="25%" class="text-center">Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <?php foreach ($tasks as $task) : ?>
+                            <tr>
+                                <td><?= $task->task_name ?></td>
+                                <td class="text-center"><?= STATUS_LIST[$task->task_status]  ?></td>
+                                <td class="text-end">
+                                    <a href="<?= site_url('edit_task/' . '?id=' . $task->id) ?>" class="btn btn-primary btn-sm"><i class="fa-solid fa-edit"></i></a>
+                                    <a href="<?= site_url('delete_task/' . '?id=' . $task->id) ?>" class="btn btn-primary btn-sm"><i class="fa-solid fa-trash"></i></a>
+                                </td>
+                            </tr>
+                        <?php endforeach; ?>
+                    </tbody>
+                </table>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- -->
-<section class="container mt-3">
-    <div class="row">
-        <div class="col">
-            <table class="table table-striped">
-                <thead>
-                    <tr>
-                        <th>Tarefas</th>
-                        <th>Status</th>
-                        <th>Ações</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>A</td>
-                        <td>B</td>
-                        <td>C</td>
-                    </tr>
-                </tbody>
-            </table>
+<?php else : ?>
+    <!-- -->
+    <section class="container mt-3">
+        <div class="row">
+            <div class="col text-center">
+                Não foram encontradas tarefas...
+            </div>
         </div>
-    </div>
-</section>
-
-<!-- -->
-<section class="container mt-3">
-    <div class="row">
-        <div class="col text-center">
-            Não foram encontradas tarefas...
-        </div>
-    </div>
-</section>
+    </section>
+<?php endif; ?>
 
 <?= $this->endSection() ?>

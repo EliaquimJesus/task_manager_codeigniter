@@ -11,8 +11,13 @@ class Main extends BaseController
 {
     public function index()
     {
-        // Crate main page
         $data = [];
+
+        // load data from database with the user in session
+        $task_model = new TasksModel();
+        $data['tasks'] = $task_model->where('id_user', session()->id)->findAll();
+
+        // Crate main page
         return view('main', $data);
     }
 
