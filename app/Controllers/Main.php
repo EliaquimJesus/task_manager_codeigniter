@@ -167,6 +167,24 @@ class Main extends BaseController
     }
 
     /**
+     *  Method to search
+     */
+    public function search()
+    {
+        $data = [];
+
+        //Get search item
+        $search_term = $this->request->getPost('text_search');
+
+        //
+        $task_model = new TasksModel();
+        $data['tasks'] = $task_model->where('id_user', session()->id)->like('task_name', $search_term)->findAll();
+        $data['datatables'] = true;
+
+        return view('main', $data);
+    }
+
+    /**
      * Function Logout
      */
     public function logout()

@@ -159,3 +159,44 @@ INFO - 2024-01-17 16:13:47 --> Session: Class initialized using 'CodeIgniter\Ses
 INFO - 2024-01-17 16:14:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2024-01-17 16:48:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2024-01-17 17:02:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 17:06:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 17:06:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-17 17:06:20 --> ErrorException: Undefined variable $datatables
+in APPPATH\Views\layouts\main_layouts.php on line 17.
+ 1 APPPATH\Views\layouts\main_layouts.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $datatables', 'C:\\laragon\\www\\gestortarefas\\app\\Views\\layouts\\main_layouts.php', 17)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\gestortarefas\\app\\Views\\layouts\\main_layouts.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(244): CodeIgniter\View\View->render('layouts/main_layouts', [], true)
+ 5 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('new_task_frm', [], true)
+ 6 APPPATH\Controllers\Main.php(110): view('new_task_frm', [])
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Main->new_task()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-17 17:06:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 17:06:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-17 17:06:29 --> ErrorException: Undefined variable $datatables
+in APPPATH\Views\layouts\main_layouts.php on line 17.
+ 1 APPPATH\Views\layouts\main_layouts.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $datatables', 'C:\\laragon\\www\\gestortarefas\\app\\Views\\layouts\\main_layouts.php', 17)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\gestortarefas\\app\\Views\\layouts\\main_layouts.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(244): CodeIgniter\View\View->render('layouts/main_layouts', [], true)
+ 5 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('new_task_frm', [], true)
+ 6 APPPATH\Controllers\Main.php(110): view('new_task_frm', [])
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Main->new_task()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-17 17:07:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 17:07:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 17:07:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 17:07:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 17:07:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 17:07:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 17:28:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 17:28:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 17:29:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 17:29:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 17:29:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 17:30:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 17:30:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
