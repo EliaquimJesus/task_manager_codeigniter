@@ -46,11 +46,11 @@
         <div class="row">
             <div class="col">
                 <h3 class="mb-5">Tarefas</h3>
-                <table class="table table-striped">
-                    <thead>
+                <table class="table table-striped table-bordered" id="table_tasks">
+                    <thead class="table-secondary">
                         <tr>
-                            <th width="50%">Tarefas</th>
-                            <th width="25%" class="text-center">Status</th>
+                            <th width="70%">Tarefas</th>
+                            <th width="20%" class="text-center">Status</th>
                             <th></th>
                         </tr>
                     </thead>
@@ -59,7 +59,7 @@
                             <tr>
                                 <td><?= $task->task_name ?></td>
                                 <td class="text-center"><?= STATUS_LIST[$task->task_status]  ?></td>
-                                <td class="text-end">
+                                <td class="text-center">
                                     <a href="<?= site_url('edit_task/' . '?id=' . $task->id) ?>" class="btn btn-primary btn-sm"><i class="fa-solid fa-edit"></i></a>
                                     <a href="<?= site_url('delete_task/' . '?id=' . $task->id) ?>" class="btn btn-primary btn-sm"><i class="fa-solid fa-trash"></i></a>
                                 </td>
@@ -80,6 +80,35 @@
             </div>
         </div>
     </section>
+<?php endif; ?>
+
+<?php if (count($tasks) > 0) : ?>
+    <script>
+        $(document).ready(function() {
+
+            // datatable
+            $('#table_tasks').DataTable({
+                language: {
+                    lengthMenu: "Mostrando _MENU_ registos por página.",
+                    zeroRecords: "Nenhum registro encontrado.",
+                    info: "Mostrando página _PAGE_ de _PAGES_",
+                    infoEmpty: "Nenhum registo disponível",
+                    infoFiltered: "(filtrado de _MAX_ registos no total)",
+                    search: "Pesquisar:",
+                    paginate: {
+                        first: "Primeira",
+                        last: "Última",
+                        next: "Seguinte",
+                        previous: "Anterior"
+                    },
+                    aria: {
+                        sortAscending: ": ative para classificar a coluna em ordem crescente.",
+                        sortDescending: ": ative para classificar a coluna em ordem decrescente."
+                    }
+                }
+            });
+        })
+    </script>
 <?php endif; ?>
 
 <?= $this->endSection() ?>

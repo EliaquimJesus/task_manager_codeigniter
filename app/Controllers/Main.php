@@ -16,6 +16,7 @@ class Main extends BaseController
         // load data from database with the user in session
         $task_model = new TasksModel();
         $data['tasks'] = $task_model->where('id_user', session()->id)->findAll();
+        $data['datatables'] = true;
 
         // Crate main page
         return view('main', $data);
