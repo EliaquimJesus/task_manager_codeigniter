@@ -6,29 +6,26 @@
     <di class="row">
         <div class="col">
             <!-- Search Bar -->
-            <?= form_open('search') ?>
             <div class="mb-3 d-flex align-items-center">
                 <label class="me-3">Pesquisar:</label>
                 <input type="text" name="text_search" class="form-control w-50 me-3">
-                <button class="btn btn-secondary" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <button class="btn btn-secondary " type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
             </div>
-            <?= form_close() ?>
 
             <!-- Status Filter -->
         </div>
 
         <div class="col">
             <!--status Filter -->
-            <?= form_open('filter') ?>
             <div class="d-flex mb-3 align-items-center">
                 <label class="me-3">Status:</label>
                 <select name="select_status" class="form-select">
                     <?php foreach (STATUS_LIST as $key => $value) : ?>
-                        <option value="<?= $key ?>"><?= $value ?></option>
+                        <option value="<?= $key ?>" <?= check_status($key, !empty(@$status) ? @$status : '') ?>>
+                            <?= $value ?></option>
                     <?php endforeach; ?>
                 </select>
             </div>
-            <?= form_close() ?>
         </div>
 
         <div class="col text-end">
@@ -82,33 +79,39 @@
     </section>
 <?php endif; ?>
 
-<?php if (count($tasks) > 0) : ?>
-    <script>
-        $(document).ready(function() {
 
-            // datatable
-            $('#table_tasks').DataTable({
-                language: {
-                    lengthMenu: "Mostrando _MENU_ registos por página.",
-                    zeroRecords: "Nenhum registro encontrado.",
-                    info: "Mostrando página _PAGE_ de _PAGES_",
-                    infoEmpty: "Nenhum registo disponível",
-                    infoFiltered: "(filtrado de _MAX_ registos no total)",
-                    search: "Pesquisar:",
-                    paginate: {
-                        first: "Primeira",
-                        last: "Última",
-                        next: "Seguinte",
-                        previous: "Anterior"
-                    },
-                    aria: {
-                        sortAscending: ": ative para classificar a coluna em ordem crescente.",
-                        sortDescending: ": ative para classificar a coluna em ordem decrescente."
-                    }
+<script>
+    $(document).ready(function() {
+
+        // datatable
+        $('#table_tasks').DataTable({
+            language: {
+                lengthMenu: "Mostrando _MENU_ registos por página.",
+                zeroRecords: "Nenhum registro encontrado.",
+                info: "Mostrando página _PAGE_ de _PAGES_",
+                infoEmpty: "Nenhum registo disponível",
+                infoFiltered: "(filtrado de _MAX_ registos no total)",
+                search: "Pesquisar:",
+                paginate: {
+                    first: "Primeira",
+                    last: "Última",
+                    next: "Seguinte",
+                    previous: "Anterior"
+                },
+                aria: {
+                    sortAscending: ": ative para classificar a coluna em ordem crescente.",
+                    sortDescending: ": ative para classificar a coluna em ordem decrescente."
                 }
-            });
-        })
-    </script>
-<?php endif; ?>
+            }
+        });
+    })
+
+    // filter change
+    document.querySelector('select[name="select_status"]').addEventListener('change', (e) => {
+        let status = e.target.value;
+        window.location.href = `<?= site_url('filter') ?>/${status}`;
+    })
+</script>
+
 
 <?= $this->endSection() ?>
