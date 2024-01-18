@@ -234,3 +234,106 @@ INFO - 2024-01-18 22:12:58 --> Session: Class initialized using 'CodeIgniter\Ses
 INFO - 2024-01-18 22:13:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2024-01-18 22:13:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2024-01-18 22:13:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-18 22:24:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-18 22:24:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-18 22:24:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-18 22:24:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-18 22:25:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-18 22:29:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-18 22:29:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-18 22:29:14 --> ErrorException: Attempt to read property "task_name" on array
+in APPPATH\Views\edit_task_frm.php on line 16.
+ 1 APPPATH\Views\edit_task_frm.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "task_name" on array', 'C:\\laragon\\www\\gestortarefas\\app\\Views\\edit_task_frm.php', 16)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\gestortarefas\\app\\Views\\edit_task_frm.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('edit_task_frm', [], true)
+ 5 APPPATH\Controllers\Main.php(173): view('edit_task_frm', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Main->edit_task('9e69f2c1c1ae73a05dd67de87daebfb46790590ceadfdbee8efa3900cdde4fb7b485d3327d36b08e8193108fa1c6a89e591a2866450bad4f7e129471ee57eea14a9208e7817878d2782427735cf0c19413d6')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-18 22:30:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-18 22:30:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-18 22:30:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-18 22:30:44 --> ErrorException: Attempt to read property "task_name" on array
+in APPPATH\Views\edit_task_frm.php on line 16.
+ 1 APPPATH\Views\edit_task_frm.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "task_name" on array', 'C:\\laragon\\www\\gestortarefas\\app\\Views\\edit_task_frm.php', 16)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\gestortarefas\\app\\Views\\edit_task_frm.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('edit_task_frm', [], true)
+ 5 APPPATH\Controllers\Main.php(173): view('edit_task_frm', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Main->edit_task('221b4378d7cf7f590c8a9a5e09cdeaa47616ff5f3e9ee15717dbdba880ec62b00ed166abed465be142b518e1e7d2e18535e994ed75241a777fc2b4b0795e26e3768fdbf8d3d2a27a1b8bcf468c0519e3d0d1')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-18 22:31:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-18 22:33:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-18 22:33:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-18 22:33:51 --> ErrorException: Attempt to read property "task_name" on array
+in APPPATH\Views\edit_task_frm.php on line 16.
+ 1 APPPATH\Views\edit_task_frm.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "task_name" on array', 'C:\\laragon\\www\\gestortarefas\\app\\Views\\edit_task_frm.php', 16)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\gestortarefas\\app\\Views\\edit_task_frm.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('edit_task_frm', [], true)
+ 5 APPPATH\Controllers\Main.php(173): view('edit_task_frm', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Main->edit_task('f273e5e60cdc6fe5b714a312944cb989a07454f3c730679938c9be230b7a60435b42e0590e0227a756567aa896eb46f898d2d2063fb5966d0c7c65b845b672abad51b7bbff46680e086b9d308982f8f0e0')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-18 22:33:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-18 22:34:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-18 22:34:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-18 22:34:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-18 22:35:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-18 22:35:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-18 22:35:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-18 22:35:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-18 22:35:48 --> ErrorException: Undefined array key 0
+in APPPATH\Controllers\Main.php on line 174.
+ 1 APPPATH\Controllers\Main.php(174): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\laragon\\www\\gestortarefas\\app\\Controllers\\Main.php', 174)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Main->edit_task('98c877ce056049d3f9a94430bfeec7b5e83b906cbfcac09ce6dc46295c881f1a31ff08ba1927fd564a1eb4045e00ac47670a3c10545802fe494c1667a5ba8abba18661ec7eb0d7d8e2d01dcf157df6034c')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-18 22:35:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-18 22:35:55 --> Error: Undefined constant "App\Controllers\tasks"
+in APPPATH\Controllers\Main.php on line 174.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Main->edit_task('98c877ce056049d3f9a94430bfeec7b5e83b906cbfcac09ce6dc46295c881f1a31ff08ba1927fd564a1eb4045e00ac47670a3c10545802fe494c1667a5ba8abba18661ec7eb0d7d8e2d01dcf157df6034c')
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-18 22:36:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-18 22:36:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-18 22:36:39 --> ErrorException: Attempt to read property "task_name" on array
+in APPPATH\Controllers\Main.php on line 174.
+ 1 APPPATH\Controllers\Main.php(174): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "task_name" on array', 'C:\\laragon\\www\\gestortarefas\\app\\Controllers\\Main.php', 174)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Main->edit_task('98c877ce056049d3f9a94430bfeec7b5e83b906cbfcac09ce6dc46295c881f1a31ff08ba1927fd564a1eb4045e00ac47670a3c10545802fe494c1667a5ba8abba18661ec7eb0d7d8e2d01dcf157df6034c')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-18 22:36:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-18 22:36:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-18 22:36:47 --> ErrorException: Attempt to read property "task_name" on array
+in APPPATH\Controllers\Main.php on line 174.
+ 1 APPPATH\Controllers\Main.php(174): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "task_name" on array', 'C:\\laragon\\www\\gestortarefas\\app\\Controllers\\Main.php', 174)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Main->edit_task('389c36ce723b3b8d4336656a8d570b98cec882b617414407506c9468e501bccd8b4621aa87bd29c7428ce80cd4ba4735e547e1c56ff5650637799b1877404df41143f7c4fc333887fb1080de3acf67167d2a')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-18 22:37:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-18 22:37:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-18 22:38:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-18 22:38:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-18 22:38:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-18 22:38:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-18 22:38:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-18 22:38:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-18 22:39:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-18 22:39:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-18 22:40:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-18 22:40:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-18 22:40:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-18 22:40:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-18 22:40:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-18 22:40:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-18 22:40:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

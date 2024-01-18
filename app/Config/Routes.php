@@ -25,6 +25,7 @@ $routes->post('/search', 'Main::search');
 
 // edit task
 $routes->get('/edit_task/(:alphanum)', 'Main::edit_task/$1');
+$routes->post('/edit_task_submit', 'Main::edit_task_submit');
 
 // tmp
 $routes->get('/session', 'Main::session');

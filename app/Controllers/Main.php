@@ -161,7 +161,21 @@ class Main extends BaseController
      */
     public function edit_task($enc_id)
     {
-        echo decrypt($enc_id);
+        // decrypt task id
+       $id = decrypt($enc_id);
+
+       $data = [];
+
+       // trazer dados a editar da BD
+       $task_model = new TasksModel();
+       $data['tasks'] = $task_model->where('id', $id)->find()[0];
+
+       return view('edit_task_frm', $data);
+    }
+
+    public function edit_task_submit()
+    {
+        //
     }
 
     /**
