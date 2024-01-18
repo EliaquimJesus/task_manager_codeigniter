@@ -23,5 +23,8 @@ $routes->get('/filter/(:alpha)', 'Main::filter/$1');
 // Search and filter tasks
 $routes->post('/search', 'Main::search');
 
+// edit task
+$routes->get('/edit_task/(:alphanum)', 'Main::edit_task/$1');
+
 // tmp
 $routes->get('/session', 'Main::session');

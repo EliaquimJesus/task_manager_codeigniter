@@ -157,6 +157,14 @@ class Main extends BaseController
     }
 
     /**
+     *  Edit task
+     */
+    public function edit_task($enc_id)
+    {
+        echo decrypt($enc_id);
+    }
+
+    /**
      * Function session
      */
     public function session()

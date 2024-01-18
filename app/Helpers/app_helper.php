@@ -12,3 +12,18 @@ function check_status($item, $status)
         return '';
     }
 }
+
+
+// Function to encrypt
+function encrypt($value)
+{
+    $enc = \Config\Services::encrypter();
+    return bin2hex($enc->encrypt($value));
+}
+
+// Function to decrypt
+function decrypt($value)
+{
+    $enc = \Config\Services::encrypter();
+    return $enc->decrypt(hex2bin($value));
+}

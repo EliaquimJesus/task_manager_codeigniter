@@ -57,8 +57,8 @@
                                 <td><?= $task->task_name ?></td>
                                 <td class="text-center"><?= STATUS_LIST[$task->task_status]  ?></td>
                                 <td class="text-center">
-                                    <a href="<?= site_url('edit_task/' . '?id=' . $task->id) ?>" class="btn btn-primary btn-sm"><i class="fa-solid fa-edit"></i></a>
-                                    <a href="<?= site_url('delete_task/' . '?id=' . $task->id) ?>" class="btn btn-primary btn-sm"><i class="fa-solid fa-trash"></i></a>
+                                    <a href="<?= site_url('edit_task/' . encrypt($task->id)) ?>" class="btn btn-primary btn-sm"><i class="fa-solid fa-edit"></i></a>
+                                    <a href="<?= site_url('delete_task/' . encrypt($task->id)) ?>" class="btn btn-primary btn-sm"><i class="fa-solid fa-trash"></i></a>
                                 </td>
                             </tr>
                         <?php endforeach; ?>
