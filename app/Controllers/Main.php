@@ -162,7 +162,10 @@ class Main extends BaseController
     public function edit_task($enc_id)
     {
         // decrypt task id
-        $id = decrypt($enc_id);
+        $task_id = decrypt($enc_id);
+        if (!$task_id) {
+            return redirect()->to('/');
+        }
 
         $data = [];
 
@@ -171,9 +174,19 @@ class Main extends BaseController
             $data['validation_errors'] = $validation_errors;
         }
 
-        // trazer dados a editar da BD
+        // load task data
         $task_model = new TasksModel();
-        $data['tasks'] = $task_model->where('id', $id)->find()[0];
+        $task_data = $task_model->where('id', $task_id)->first();
+        if (!$task_data) {
+            return redirect()->to('/');
+        }
+
+        // check is task belong to the user in the sessio
+        if ($task_data->id_user != session()->id) {
+            return redirect()->to('/');
+        }
+
+        $data['tasks'] = $task_data;
 
         return view('edit_task_frm', $data);
     }
@@ -184,6 +197,11 @@ class Main extends BaseController
         $validations = $this->validate(
             //rules
             [
+                'id_task' => [
+                    'label' => 'id da tarefa',
+                    'rules' => 'required',
+                    'errors' => ['required' => 'O campo {field} é obrigatório.']
+                ],
                 'text_tarefa' => [
                     'label' => 'Nome da tarefa',
                     'rules' => 'required|min_length[5]|max_length[200]',
@@ -199,6 +217,11 @@ class Main extends BaseController
                     'errors' => [
                         'max_length' => 'O campo {field} deve ter no máximo {param} caracteres.'
                     ]
+                ],
+                'select_status' => [
+                    'label' => 'Status',
+                    'rules' => 'required',
+                    'errors' => ['required' => 'O campo {field} é obrigatório.']
                 ]
             ]
         );
@@ -208,21 +231,35 @@ class Main extends BaseController
         }
 
         // Get form data
-        $id = $this->request->getPost('id_task');
+        $id = decrypt($this->request->getPost('id_task'));
+        if (!$id) {
+            return redirect()->to('/');
+        }
         $title = $this->request->getPost('text_tarefa');
         $description = $this->request->getPost('text_descricao');
+        $status = $this->request->getPost('select_status');
 
-        //
+        // load task data
         $task_model = new TasksModel();
+        $task_data = $task_model->where('id', $id)->first();
+        if (!$task_data) {
+            return redirect()->to('/');
+        }
 
+        // check is task belong to the user in the sessio
+        if ($task_data->id_user != session()->id) {
+            return redirect()->to('/');
+        }
+
+        // Update task in DB
         $task_model->update($id, [
             'task_name' => $title,
-            'task_description' => $description
+            'task_description' => $description,
+            'task_status' => $status
         ]);
 
         // redirect to homepage
         return redirect()->to('/');
-        echo 'FIM';
     }
 
     /**
