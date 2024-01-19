@@ -11,27 +11,28 @@
                 <hr>
                 <?= form_open('edit_task_submit', ['novalidate' => true]) ?>
                 <div class="mb-3">
+                    <input type="hidden" name="id_task" value="<?= $tasks->id ?>">
+                </div>
+                <div class="mb-3">
                     <label for="" class="form-label">Nome da tarefa:</label>
-                    <input type="text" name="text_tarefa" class="form-control" placeholder="Nome da tarefa" required
-                        value="<?= $tasks->task_name ?>">
+                    <input type="text" name="text_tarefa" class="form-control" placeholder="Nome da tarefa" required value="<?= $tasks->task_name ?>">
                 </div>
                 <div class="mb-3">
                     <label for="" class="form-label">Descrição da tarefa:</label>
-                    <textarea name="text_descricao" class="form-control"
-                        rows="3"><?= $tasks->task_description ?></textarea>
+                    <textarea name="text_descricao" class="form-control" rows="3"><?= $tasks->task_description ?></textarea>
                 </div>
                 <div class="text-center">
                     <a href="<?= site_url('/') ?>" class="btn btn-primary px-5">Cancelar</a>
                     <button type="submit" class="btn btn-secondary px-5">Gravar</button>
                 </div>
                 <?= form_close() ?>
-                <!-- <?php if (!empty($validation_errors)) : ?>
-                <div class="alert alert-danger mt-3">
-                    <?php foreach ($validation_errors as $error) : ?>
-                    <?= $error ?>
-                    <?php endforeach; ?>
-                </div>
-                <?php endif; ?> -->
+                <?php if (!empty($validation_errors)) : ?>
+                    <div class="alert alert-danger mt-3">
+                        <?php foreach ($validation_errors as $error) : ?>
+                            <?= $error ?>
+                        <?php endforeach; ?>
+                    </div>
+                <?php endif; ?>
             </div>
 
         </div>

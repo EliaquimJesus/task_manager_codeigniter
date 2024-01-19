@@ -162,20 +162,67 @@ class Main extends BaseController
     public function edit_task($enc_id)
     {
         // decrypt task id
-       $id = decrypt($enc_id);
+        $id = decrypt($enc_id);
 
-       $data = [];
+        $data = [];
 
-       // trazer dados a editar da BD
-       $task_model = new TasksModel();
-       $data['tasks'] = $task_model->where('id', $id)->find()[0];
+        $validation_errors = session()->getFlashdata('validation_errors');
+        if ($validation_errors) {
+            $data['validation_errors'] = $validation_errors;
+        }
 
-       return view('edit_task_frm', $data);
+        // trazer dados a editar da BD
+        $task_model = new TasksModel();
+        $data['tasks'] = $task_model->where('id', $id)->find()[0];
+
+        return view('edit_task_frm', $data);
     }
 
     public function edit_task_submit()
     {
         //
+        $validations = $this->validate(
+            //rules
+            [
+                'text_tarefa' => [
+                    'label' => 'Nome da tarefa',
+                    'rules' => 'required|min_length[5]|max_length[200]',
+                    'errors' => [
+                        'required' => 'O campo {field} é obrigatório.',
+                        'min_length' => 'O campo {field} deve ter no mínimo {param} caracteres.',
+                        'max_length' => 'O campo {field} deve ter no máximo {param} caracteres.'
+                    ]
+                ],
+                'text_descricao' => [
+                    'label' => 'Descricao',
+                    'rules' => 'max_length[500]',
+                    'errors' => [
+                        'max_length' => 'O campo {field} deve ter no máximo {param} caracteres.'
+                    ]
+                ]
+            ]
+        );
+
+        if (!$validations) {
+            return redirect()->back()->withInput()->with('validation_errors', $this->validator->getErrors());
+        }
+
+        // Get form data
+        $id = $this->request->getPost('id_task');
+        $title = $this->request->getPost('text_tarefa');
+        $description = $this->request->getPost('text_descricao');
+
+        //
+        $task_model = new TasksModel();
+
+        $task_model->update($id, [
+            'task_name' => $title,
+            'task_description' => $description
+        ]);
+
+        // redirect to homepage
+        return redirect()->to('/');
+        echo 'FIM';
     }
 
     /**
@@ -206,6 +253,9 @@ class Main extends BaseController
         return view('main', $data);
     }
 
+    /**
+     *  Function to filter tasks
+     */
     public function filter($status)
     {
         $data = [];
