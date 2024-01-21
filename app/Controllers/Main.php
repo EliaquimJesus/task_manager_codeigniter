@@ -24,6 +24,11 @@ class Main extends BaseController
 
     public function login()
     {
+        // Check if there is an active session
+        if(session()->has('id')){
+            return redirect()->to('/');
+        }
+
         $data = [];
 
         // Check for validation error (getFlashdata é um mecanismo do codeigniter)
@@ -352,16 +357,6 @@ class Main extends BaseController
         // open details page
         return view('task_details', $data);
      }
-
-    /**
-     *  Function session
-     */
-    public function session()
-    {
-        echo '<pre>';
-        print_r(session()->get());
-        echo '</pre>';
-    }
 
     /**
      *  Method to search

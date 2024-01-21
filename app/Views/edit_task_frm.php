@@ -8,7 +8,7 @@
             <div class="col-md-6 col-sm-12">
                 <h4>Editar Tarefa</h3>
                 <hr>
-                <?= form_open('edit_task_submit', ['novalidate' => true]) ?>
+                <?= form_open('edit_task_submit') ?>
 
                 <!-- get encrypted id -->
                 <div class="mb-3">

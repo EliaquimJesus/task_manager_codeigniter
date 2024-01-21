@@ -32,5 +32,4 @@ $routes->get('/delete_task_confirm/(:alphanum)', 'Main::delete_task_confirm/$1')
 // tasks details
 $routes->get('/task_details/(:alphanum)', 'Main::task_details/$1');
 
-// tmp
-$routes->get('/session', 'Main::session');
+
