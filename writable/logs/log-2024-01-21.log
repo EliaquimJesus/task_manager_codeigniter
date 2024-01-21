@@ -1,0 +1,319 @@
+INFO - 2024-01-21 16:19:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-21 16:19:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-21 16:20:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-21 16:20:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-21 16:20:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-21 16:20:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-21 16:20:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-21 16:20:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-21 16:20:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-21 16:20:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-21 16:34:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-21 16:34:37 --> ParseError: syntax error, unexpected token "return", expecting identifier or variable or "{" or "$"
+in APPPATH\Controllers\Main.php on line 283.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(288): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\gestortarefas\\app\\Controllers\\Main.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Main')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Main')
+ 4 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\Main', true)
+ 5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-21 16:34:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-21 16:34:41 --> ParseError: syntax error, unexpected token "return", expecting identifier or variable or "{" or "$"
+in APPPATH\Controllers\Main.php on line 283.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(288): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\gestortarefas\\app\\Controllers\\Main.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Main')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Main')
+ 4 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\Main', true)
+ 5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-21 16:42:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-21 16:42:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-21 16:42:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-21 16:42:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-21 16:44:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-21 16:44:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-21 16:44:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-21 16:45:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-21 16:45:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-21 16:45:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-21 16:45:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-21 16:45:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-21 16:46:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-21 16:46:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-21 16:46:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-21 16:46:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-21 16:49:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-21 16:49:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-21 16:49:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-21 16:49:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-21 16:49:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-21 16:50:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-21 16:50:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-21 16:51:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-21 16:51:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-21 16:51:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-21 16:53:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-21 16:53:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-21 16:53:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-21 16:53:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-21 16:54:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-21 16:54:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-21 16:55:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-21 16:56:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-21 16:56:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-21 16:56:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-21 16:56:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-21 16:56:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-21 16:57:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-21 16:57:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-21 16:57:25 --> ErrorException: Undefined property: stdClass::$text_name
+in APPPATH\Views\delete_task_frm.php on line 13.
+ 1 APPPATH\Views\delete_task_frm.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$text_name', 'C:\\laragon\\www\\gestortarefas\\app\\Views\\delete_task_frm.php', 13)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\gestortarefas\\app\\Views\\delete_task_frm.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('delete_task_frm', [], true)
+ 5 APPPATH\Controllers\Main.php(289): view('delete_task_frm', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Main->delete_task('ecf650a7429141297141e1eefd657996e6c3da2f5bbd354300afffde1fe80a57ce5784751ae99a3e107b124334b170845855380fd7b192a4942c1e07e279fe33b82c4526e1465e19c29064c9f7ee0eb7e00b')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-21 16:57:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-21 16:57:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-21 16:57:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-21 16:58:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-21 16:58:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-21 16:58:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-21 16:58:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-21 16:58:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-21 16:58:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-21 16:58:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-21 16:58:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-21 16:58:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-21 16:58:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-21 16:58:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-21 17:05:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-21 17:05:05 --> ErrorException: Undefined variable $task
+in APPPATH\Views\delete_task_frm.php on line 12.
+ 1 APPPATH\Views\delete_task_frm.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $task', 'C:\\laragon\\www\\gestortarefas\\app\\Views\\delete_task_frm.php', 12)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\gestortarefas\\app\\Views\\delete_task_frm.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('delete_task_frm', [], true)
+ 5 APPPATH\Controllers\Main.php(289): view('delete_task_frm', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Main->delete_task('b7b87eca244d511e4781ceec415a77eeba0b8a58ab7203fd55592566c34bed6e7f92150f3d84cf8a0132e432f08c82ec9f0739bc4609f2bdb1b5342299b78a065bbf066c5b6bc8717a143f4c811483b6459b')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-21 17:05:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-21 17:05:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-21 17:05:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-21 17:05:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-21 17:05:50 --> ErrorException: Undefined variable $task
+in APPPATH\Views\delete_task_frm.php on line 12.
+ 1 APPPATH\Views\delete_task_frm.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $task', 'C:\\laragon\\www\\gestortarefas\\app\\Views\\delete_task_frm.php', 12)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\gestortarefas\\app\\Views\\delete_task_frm.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('delete_task_frm', [], true)
+ 5 APPPATH\Controllers\Main.php(289): view('delete_task_frm', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Main->delete_task('21eaef1cf8fa6bef6dfd1c639de3d50311540d56a4ce15e3ea38edbc23b02854c3a92d80aab09b1d1cb4ae6db81a88e9eebfe619b921e4a68331cd31ff5f44131820f395567391170bafb80c4cd975fe4e40')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-21 17:06:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-21 17:06:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-21 17:18:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-21 17:30:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-21 17:30:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-21 17:30:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-21 17:30:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-21 17:30:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-21 17:31:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-21 17:31:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-21 17:32:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-21 17:32:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-21 17:33:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-21 17:33:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-01-21 17:33:53 --> [DEPRECATED] hex2bin(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Helpers\app_helper.php on line 28.
+ 1 APPPATH\Helpers\app_helper.php(28): hex2bin(null)
+ 2 APPPATH\Controllers\Main.php(299): decrypt(null)
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Main->delete_task_submit()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-21 17:33:53 --> CodeIgniter\Encryption\Exceptions\EncryptionException: Decrypting: authentication failed.
+in SYSTEMPATH\Encryption\Handlers\OpenSSLHandler.php on line 139.
+ 1 SYSTEMPATH\Encryption\Handlers\OpenSSLHandler.php(139): CodeIgniter\Encryption\Exceptions\EncryptionException::forAuthenticationFailed()
+ 2 APPPATH\Helpers\app_helper.php(28): CodeIgniter\Encryption\Handlers\OpenSSLHandler->decrypt('')
+ 3 APPPATH\Controllers\Main.php(299): decrypt(null)
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Main->delete_task_submit()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-21 17:34:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-21 17:34:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-01-21 17:34:22 --> [DEPRECATED] hex2bin(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Helpers\app_helper.php on line 28.
+ 1 APPPATH\Helpers\app_helper.php(28): hex2bin(null)
+ 2 APPPATH\Controllers\Main.php(299): decrypt(null)
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Main->delete_task_submit()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-21 17:34:22 --> CodeIgniter\Encryption\Exceptions\EncryptionException: Decrypting: authentication failed.
+in SYSTEMPATH\Encryption\Handlers\OpenSSLHandler.php on line 139.
+ 1 SYSTEMPATH\Encryption\Handlers\OpenSSLHandler.php(139): CodeIgniter\Encryption\Exceptions\EncryptionException::forAuthenticationFailed()
+ 2 APPPATH\Helpers\app_helper.php(28): CodeIgniter\Encryption\Handlers\OpenSSLHandler->decrypt('')
+ 3 APPPATH\Controllers\Main.php(299): decrypt(null)
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Main->delete_task_submit()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-21 17:46:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-21 17:46:53 --> ErrorException: Undefined property: stdClass::$task_decription
+in APPPATH\Views\delete_task.php on line 19.
+ 1 APPPATH\Views\delete_task.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$task_decription', 'C:\\laragon\\www\\gestortarefas\\app\\Views\\delete_task.php', 19)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\gestortarefas\\app\\Views\\delete_task.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('delete_task', [], true)
+ 5 APPPATH\Controllers\Main.php(292): view('delete_task', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Main->delete_task('adc60ee1f669c6b17a2d7b337b4a26cd364d555def2e7b654a1e34a6e65c9ce93be39b90e410d156a9ed58b0dd3749179ff2e8089ea71830231a51ac84ea014035592e52fd260ece5a7bed6ec4004ab0aea0')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-21 17:47:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-21 17:47:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-21 17:47:03 --> ErrorException: Undefined property: stdClass::$task_decription
+in APPPATH\Views\delete_task.php on line 19.
+ 1 APPPATH\Views\delete_task.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$task_decription', 'C:\\laragon\\www\\gestortarefas\\app\\Views\\delete_task.php', 19)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\gestortarefas\\app\\Views\\delete_task.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('delete_task', [], true)
+ 5 APPPATH\Controllers\Main.php(292): view('delete_task', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Main->delete_task('c1214ce1cce11d4fe0b094f846972e77180f3763eaf22ecef4b03e1483b53c156f7d2d0fbef3a08e92833004c8a63da0434d2b78f7fea67b95538534979790908957528c4c57570dca1e2593f49ecd8559')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-21 17:47:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-21 17:47:19 --> ErrorException: Undefined property: stdClass::$task_decription
+in APPPATH\Views\delete_task.php on line 19.
+ 1 APPPATH\Views\delete_task.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$task_decription', 'C:\\laragon\\www\\gestortarefas\\app\\Views\\delete_task.php', 19)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\gestortarefas\\app\\Views\\delete_task.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('delete_task', [], true)
+ 5 APPPATH\Controllers\Main.php(292): view('delete_task', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Main->delete_task('c1214ce1cce11d4fe0b094f846972e77180f3763eaf22ecef4b03e1483b53c156f7d2d0fbef3a08e92833004c8a63da0434d2b78f7fea67b95538534979790908957528c4c57570dca1e2593f49ecd8559')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-21 17:47:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-21 17:47:21 --> ErrorException: Undefined property: stdClass::$task_decription
+in APPPATH\Views\delete_task.php on line 19.
+ 1 APPPATH\Views\delete_task.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$task_decription', 'C:\\laragon\\www\\gestortarefas\\app\\Views\\delete_task.php', 19)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\gestortarefas\\app\\Views\\delete_task.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('delete_task', [], true)
+ 5 APPPATH\Controllers\Main.php(292): view('delete_task', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Main->delete_task('c1214ce1cce11d4fe0b094f846972e77180f3763eaf22ecef4b03e1483b53c156f7d2d0fbef3a08e92833004c8a63da0434d2b78f7fea67b95538534979790908957528c4c57570dca1e2593f49ecd8559')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-21 17:47:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-21 17:50:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-21 17:50:02 --> TypeError: key_exists(): Argument #2 ($array) must be of type array, string given
+in APPPATH\Views\delete_task.php on line 24.
+ 1 APPPATH\Views\delete_task.php(24): key_exists([...], 'new')
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\gestortarefas\\app\\Views\\delete_task.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('delete_task', [], true)
+ 5 APPPATH\Controllers\Main.php(292): view('delete_task', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Main->delete_task('c1214ce1cce11d4fe0b094f846972e77180f3763eaf22ecef4b03e1483b53c156f7d2d0fbef3a08e92833004c8a63da0434d2b78f7fea67b95538534979790908957528c4c57570dca1e2593f49ecd8559')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-21 17:51:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-21 17:51:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-21 17:51:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-21 17:51:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-21 17:52:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-21 17:52:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-21 17:55:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-21 17:55:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-21 17:56:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-21 17:56:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-21 17:57:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-21 17:57:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-21 17:57:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-21 17:57:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-21 17:57:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-01-21 17:57:26 --> [DEPRECATED] hex2bin(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Helpers\app_helper.php on line 28.
+ 1 APPPATH\Helpers\app_helper.php(28): hex2bin(null)
+ 2 APPPATH\Controllers\Main.php(302): decrypt(null)
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Main->delete_task_confirm()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-21 17:57:26 --> CodeIgniter\Encryption\Exceptions\EncryptionException: Decrypting: authentication failed.
+in SYSTEMPATH\Encryption\Handlers\OpenSSLHandler.php on line 139.
+ 1 SYSTEMPATH\Encryption\Handlers\OpenSSLHandler.php(139): CodeIgniter\Encryption\Exceptions\EncryptionException::forAuthenticationFailed()
+ 2 APPPATH\Helpers\app_helper.php(28): CodeIgniter\Encryption\Handlers\OpenSSLHandler->decrypt('')
+ 3 APPPATH\Controllers\Main.php(302): decrypt(null)
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Main->delete_task_confirm()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-21 18:01:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-21 18:01:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-21 18:02:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-21 18:02:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-21 18:02:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-21 18:02:51 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "/.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('/', [], true)
+ 3 APPPATH\Controllers\Main.php(321): view('/')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Main->delete_task_confirm('5028b84acd6015206bc4a3b465a4bf4d6ca27e7af689afd66c5b7d0fca43e7d6a2d84f213c73a2ee7741f53b9625d20537d86d489f879bb2370db424ea133b6197e4cbe33e4d842f3b6388c178ab416adaad')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-21 18:03:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-21 18:03:25 --> ErrorException: Attempt to read property "id_user" on null
+in APPPATH\Controllers\Main.php on line 314.
+ 1 APPPATH\Controllers\Main.php(314): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id_user" on null', 'C:\\laragon\\www\\gestortarefas\\app\\Controllers\\Main.php', 314)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Main->delete_task_confirm('5028b84acd6015206bc4a3b465a4bf4d6ca27e7af689afd66c5b7d0fca43e7d6a2d84f213c73a2ee7741f53b9625d20537d86d489f879bb2370db424ea133b6197e4cbe33e4d842f3b6388c178ab416adaad')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-21 18:03:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-21 18:03:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-21 18:03:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-21 18:03:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-21 18:03:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-21 18:03:38 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "/.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('/', [], true)
+ 3 APPPATH\Controllers\Main.php(321): view('/')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Main->delete_task_confirm('6f962b0faaea02fff6827fd4db2540d3a49c65150016b2cf643a4de6411f2b530556b51327431bd463f2a8c031e9e365ef70e3c7eb05bd6a9936f326e7625b05857d0465b3dc43dd9db2ba22a8ee356ef9b9')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-21 18:03:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-21 18:03:45 --> ErrorException: Attempt to read property "id_user" on null
+in APPPATH\Controllers\Main.php on line 314.
+ 1 APPPATH\Controllers\Main.php(314): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id_user" on null', 'C:\\laragon\\www\\gestortarefas\\app\\Controllers\\Main.php', 314)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Main->delete_task_confirm('6f962b0faaea02fff6827fd4db2540d3a49c65150016b2cf643a4de6411f2b530556b51327431bd463f2a8c031e9e365ef70e3c7eb05bd6a9936f326e7625b05857d0465b3dc43dd9db2ba22a8ee356ef9b9')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-21 18:03:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-21 18:03:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-21 18:05:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-21 18:05:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-21 18:05:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-21 18:05:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-21 18:05:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-21 18:05:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-21 18:05:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-21 18:05:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-21 18:05:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-21 18:05:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

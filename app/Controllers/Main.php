@@ -181,7 +181,7 @@ class Main extends BaseController
             return redirect()->to('/');
         }
 
-        // check is task belong to the user in the sessio
+        // check if task belong to the user in the session
         if ($task_data->id_user != session()->id) {
             return redirect()->to('/');
         }
@@ -246,7 +246,7 @@ class Main extends BaseController
             return redirect()->to('/');
         }
 
-        // check is task belong to the user in the sessio
+        // check if task belong to the user in the session
         if ($task_data->id_user != session()->id) {
             return redirect()->to('/');
         }
@@ -263,7 +263,67 @@ class Main extends BaseController
     }
 
     /**
-     * Function session
+     * Method to delete tasks
+     */
+    public function delete_task($enc_id)
+    {
+        // decrypt task id
+        $id_task = decrypt($enc_id);
+        if (!$id_task) {
+            return redirect()->to('/');
+        }
+
+        $data = [];
+
+        //load data from database
+        $task_model = new TasksModel();
+        $task_data = $task_model->where('id', $id_task)->first();
+        if(!$task_data){
+            return redirect()->to('/');
+        }
+
+        // check if task belong to the user in the session
+        if($task_data->id_user != session()->id){
+            return redirect()->to('/');
+        }
+
+        $data['tasks'] = $task_data;
+
+        return view('delete_task', $data);
+
+    }
+
+    /**
+     *  Method to submit delete task
+     */
+    public function delete_task_confirm($enc_id)
+    {
+        //decrypt id
+        $id = decrypt($enc_id);
+
+        // check if id
+        if(!$enc_id){
+            return redirect()->to('/');
+        }
+
+        // load task data
+        $task_model = new TasksModel();
+        $task_data = $task_model->where('id', $id)->first();
+
+        // check if task belong to the user in the session
+        if($task_data->id_user != session()->id){
+            return redirect()->to('/');
+        }
+
+        $task_model->delete(['id' => $id]);
+
+        // redirect to main page
+        return redirect()->to('/');
+        
+    }
+
+    /**
+     *  Function session
      */
     public function session()
     {

@@ -6,11 +6,9 @@ use CodeIgniter\Router\RouteCollection;
  * @var RouteCollection $routes
  */
 $routes->get('/', 'Main::index');
-
 $routes->get('/login', 'Main::login');
 
 $routes->post('/login_submit', 'Main::login_submit');
-
 $routes->get('/logout', 'Main::logout');
 
 // Ne task
@@ -26,6 +24,10 @@ $routes->post('/search', 'Main::search');
 // edit task
 $routes->get('/edit_task/(:alphanum)', 'Main::edit_task/$1');
 $routes->post('/edit_task_submit', 'Main::edit_task_submit');
+
+// delete task
+$routes->get('/delete_task/(:alphanum)', 'Main::delete_task/$1');
+$routes->get('/delete_task_confirm/(:alphanum)', 'Main::delete_task_confirm/$1');
 
 // tmp
 $routes->get('/session', 'Main::session');
