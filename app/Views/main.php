@@ -48,7 +48,7 @@
                     <tr>
                         <th width="70%">Tarefas</th>
                         <th width="20%" class="text-center">Status</th>
-                        <th></th>
+                        <th></th> 
                     </tr>
                 </thead>
                 <tbody>
@@ -57,7 +57,7 @@
                         <td><a href="<?= site_url('task_details/' . encrypt($task->id)) ?>" style="text-decoration: none;"><?= $task->task_name ?></a><br>
                             <small class="opacity-25"><?= $task->task_description ?></small>
                         </td>
-                        <td class="text-center"><?= STATUS_LIST[$task->task_status]  ?></td>
+                        <td class="text-center <?= STATUS_LIST_COLORS[$task->task_status] ?>"><?= STATUS_LIST[$task->task_status]  ?></td>
                         <td class="text-center">
                             <a href="<?= site_url('edit_task/' . encrypt($task->id)) ?>"
                                 class="btn btn-primary btn-sm"><i class="fa-solid fa-edit"></i></a>

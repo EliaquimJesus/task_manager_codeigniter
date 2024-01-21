@@ -106,3 +106,12 @@ define('STATUS_LIST', [
     'cancelled' => 'Cancelada',
     'finished' => 'Finalizada'
 ]);
+
+// cores
+define('STATUS_LIST_COLORS', [
+    'new' => 'text-white',
+    'started' => 'text-success',
+    'paused' => 'text-warning',
+    'cancelled' => 'text-danger',
+    'finished' => 'text-info'
+]);
