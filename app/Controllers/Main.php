@@ -323,6 +323,37 @@ class Main extends BaseController
     }
 
     /**
+     *  Method to task details
+     */
+
+     public function task_details($enc_id){
+
+        // decrypt id
+        $id = decrypt($enc_id);
+        if(!$id){
+            return redirect()->to('/');
+        }
+
+        $data = [];
+
+        $task_model = new TasksModel();
+        $task_data = $task_model->where('id', $id)->first();
+        if(!$task_data){
+            return redirect()->to('/');
+        }
+
+        // check if task belong to the user in the session
+        if($task_data->id_user != session()->id){
+            return redirect()->to('/');
+        }
+
+        $data['tasks'] = $task_data;
+
+        // open details page
+        return view('task_details', $data);
+     }
+
+    /**
      *  Function session
      */
     public function session()

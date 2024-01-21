@@ -3,11 +3,10 @@
 
 <!-- New task form with bootstrap -->
 <div class="container mt-5">
-    <div class="row">
-        <div class="col">
-            <h3>Editar Tarefa</h3>
+    <div class="row justify-content-center">
 
             <div class="col-md-6 col-sm-12">
+                <h4>Editar Tarefa</h3>
                 <hr>
                 <?= form_open('edit_task_submit', ['novalidate' => true]) ?>
 
@@ -34,10 +33,10 @@
                         <?php endforeach; ?>
                     </select>
                 </div>
-
+                <hr>
                 <div class="text-center">
-                    <a href="<?= site_url('/') ?>" class="btn btn-primary px-5">Cancelar</a>
-                    <button type="submit" class="btn btn-secondary px-5">Gravar</button>
+                    <a href="<?= site_url('/') ?>" class="btn btn-primary px-5"><i class="fa-solid fa-ban me-2"></i>Cancelar</a>
+                    <button type="submit" class="btn btn-secondary px-5"><i class="fa-regular fa-floppy-disk me-2"></i>Gravar</button>
                 </div>
                 <?= form_close() ?>
                 <?php if (!empty($validation_errors)) : ?>
@@ -49,7 +48,6 @@
                 <?php endif; ?>
             </div>
 
-        </div>
     </div>
 </div>
 

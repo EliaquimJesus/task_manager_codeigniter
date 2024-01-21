@@ -23,7 +23,7 @@
                     <p class="opacity-50">Status:</p>
                     <h4 class="text-white"><?= STATUS_LIST[$tasks->task_status] ?></h4>
                 </div>
-                
+                <hr>
                 <div class="text-center">
                     <a href="<?= site_url('/') ?>" class="btn btn-primary"><i class="fa-solid fa-ban me-2"></i>Cancelar</a>
                     <a href="<?= site_url('/delete_task_confirm/') . encrypt($tasks->id) ?>"  class="btn btn-secondary"><i class="fa-solid fa-trash-can me-2"></i>Eliminar</a>

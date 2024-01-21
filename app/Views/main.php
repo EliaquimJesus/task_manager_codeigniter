@@ -3,7 +3,7 @@
 
 <!-- Main page -->
 <section class="container mt-5">
-    <di class="row">
+    <di class="row ">
         <div class="col">
             <!-- Search Bar -->
             <div class="mb-3 d-flex align-items-center">
@@ -54,7 +54,9 @@
                 <tbody>
                     <?php foreach ($tasks as $task) : ?>
                     <tr>
-                        <td><?= $task->task_name ?></td>
+                        <td><a href="<?= site_url('task_details/' . encrypt($task->id)) ?>" style="text-decoration: none;"><?= $task->task_name ?></a><br>
+                            <small class="opacity-25"><?= $task->task_description ?></small>
+                        </td>
                         <td class="text-center"><?= STATUS_LIST[$task->task_status]  ?></td>
                         <td class="text-center">
                             <a href="<?= site_url('edit_task/' . encrypt($task->id)) ?>"

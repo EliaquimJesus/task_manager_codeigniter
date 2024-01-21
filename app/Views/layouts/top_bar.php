@@ -1,7 +1,7 @@
 <header class="contaiber-fluid">
     <div class="row align-items-center bg-secondary text-white">
         <div class="col mx-5">
-            <h4><?= APP_NAME ?></h4>
+            <h4><a href="<?= site_url('/') ?>" style="text-decoration: none;"><?= APP_NAME ?></a></h4>
         </div>
         <div class="col p-4 text-end">
             <i class="fa-regular fa-user me-2"></i></i><?= session()->utilizador ?>
